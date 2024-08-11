@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/carti420/Desktop/TermProject_ECE0202",
+      "program": "/Users/carti420/Desktop/TermProject_ECE0202/build/Debug/outDebug"
+    }
+  ]
+}
