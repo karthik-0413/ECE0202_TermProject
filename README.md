@@ -40,4 +40,5 @@ This design constraint of the elevator logic required us to implement external i
 
 # Schematic:
 **Here is the schematic of the elevator design:**
+
 ![Elevator Schematic](Pictures/Picture1.jpg)
