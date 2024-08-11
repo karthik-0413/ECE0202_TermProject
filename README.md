@@ -1,7 +1,7 @@
 # Overview of Term Project
 This project involves developing an elevator simulation be integrating the previous labs I've completed for this class. Additionally, it cludes designing and building a 3D model of an actual elevator prototype. The simulation will replicate real-world elevator operations, while the 3D prototype will serve as a tangible representation of the design.
 
-Elevator Implementation:
+# Elevator Implementation:
 Our elevator design allows the user to travel between multiple floors. Our design for the elevator uses various parts such as a keypad, seven segment display, two stepper motors, and five LEDs. 
 
 1.	Keypad: The keypad acts as the grid of numbers inside the elevator, which allows the passengers to press which floor they want to go to. We implemented the keypad by using the keypad function that we implemented in Lab 04. In the main elevator function, we had the keypad function returning the integer that was pressed by the user. The reason we had the keypad returning which number was pressed was that we needed to know which LED to light up. We also allowed for multiple floors to be called while the doors of the elevator were open. 
@@ -12,20 +12,17 @@ Our elevator design allows the user to travel between multiple floors. Our desig
 6.	Elevator Model: We were able to design, and 3-D build an elevator to help us demonstrate our simulation. This model helps the audience visualize how the elevator operates in real life. There are also 3-D printed doors that open and close which also helps us visualize the simulation. 
 Overall, our implementation of the elevator required many external parts, but by implementing them in an organized manner, we were able to create a working elevator model.
 
-Design Constraints:
+# Design Constraints:
 During our time working on this project, we encountered several design constraints that informed and shaped our decisions. Several of these are listed below.
 1.	Number of Usable Pins on the Microcontroller
 The STM Nucleo-64 microcontroller we used has 4 GPIOS with 16 pins each, totaling 64 GPIO pins. The peripherals we used in our project had to have pins less than 64. Even then, some of the pins were unusable, such as PA2 and PA3, which required us to work around these reserved pins. 
 2.	Use of ARM Assembly and C Languages
 The specification of combining ARM Assembly with C had its own unique challenges. We decided to write the bulk of the high-level logic in a C file, while the low-level peripheral initialization and management was written in assembly. To combine these two, the EXPORT name of the assembly function could be called in C with any necessary parameters.
 3.	Floor Calls Need to be Received at Any Time
-This design constraint of the elevator logic required us to implement external interrupts. We could not use polling since there could be instances where the floor call would not be received if another function (like the stepper motor turning) was currently running. We were able to modify the code found in chapter 8 of the textbook to implement interrupts and handlers for each floor call.
+This design constraint of the elevator logic required us to implement external interrupts. We could not use polling since there could be instances where the floor call would not be received if another function (like the stepper motor turning) was currently running. We were able to modify the code found in chapter 8 of the textbook to implement interrupts and handlers for each floor call.                
 
-Schematic:
-                                 
-
-Successes and Failures Encountered:
-	Successes:
+# Successes and Failures Encountered:
+Successes:
 1.	We were able to successfully use multiple external interrupts to detect the elevator button press and light up the corresponding LED. As well as using an admin interrupt to disable the other external interrupts. 
 2.	We were able to design and print a small-scale elevator that helps us show the audience how an actual elevator would run with our code. 
 Failures:
