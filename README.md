@@ -37,3 +37,7 @@ This design constraint of the elevator logic required us to implement external i
 
 **Failures**:
 1.	We were unable to successfully display the elevator's status using the external terminal. We got all the messages to display successfully except for ‘Moving Down.’ 
+
+# Schematic:
+**Here is the schematic of the elevator design:**
+![Elevator Schematic](Pictures/Picture1.jpg)
