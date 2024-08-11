@@ -1,3 +1,4 @@
+# Overview of Term Project
 This project involves developing an elevator simulation be integrating the previous labs I've completed for this class. Additionally, it cludes designing and building a 3D model of an actual elevator prototype. The simulation will replicate real-world elevator operations, while the 3D prototype will serve as a tangible representation of the design.
 
 Elevator Implementation:
