@@ -25,5 +25,6 @@ This design constraint of the elevator logic required us to implement external i
 **Successes**:
 1.	We were able to successfully use multiple external interrupts to detect the elevator button press and light up the corresponding LED. As well as using an admin interrupt to disable the other external interrupts. 
 2.	We were able to design and print a small-scale elevator that helps us show the audience how an actual elevator would run with our code. <br>
+
 **Failures**:
 1.	We were unable to successfully display the elevator's status using the external terminal. We got all the messages to display successfully except for ‘Moving Down.’ 
