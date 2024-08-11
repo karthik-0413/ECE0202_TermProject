@@ -1,6 +1,15 @@
 # Overview of Term Project
 This project involves developing an elevator simulation be integrating the previous labs I've completed for this class. Additionally, it cludes designing and building a 3D model of an actual elevator prototype. The simulation will replicate real-world elevator operations, while the 3D prototype will serve as a tangible representation of the design.
 
+# File Explanation
+1. **LED.s**: Contains the code responsible for illuminating the corresponding light for each floor, indicating the elevator's current location.
+2. **SevenSeg.s**: Manages the display of the elevator’s current floor using a seven-segment display.
+3. **key.s**: Handles the keypad input, allowing passengers to select a floor by pressing a number, which directs the elevator to that chosen floor.
+4. **stepperForElevator.s**: Controls the stepper motor responsible for moving the elevator up and down between floors.
+5. **stepperForDoor.s**: Operates the stepper motor that opens and closes the elevator doors, allowing passengers to enter and exit.
+6. **main.c**: Serves as the central logic hub for the elevator system, integrating the functionalities of the above files to ensure smooth and fully operational elevator behavior.
+
+
 # Elevator Implementation:
 Our elevator design allows the user to travel between multiple floors. Our design for the elevator uses various parts such as a keypad, seven segment display, two stepper motors, and five LEDs. 
 
